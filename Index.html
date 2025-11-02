@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cascadia Punktezähler - Datenschutzerklärung / Privacy Policy</title>
+  <meta name="description" content="Datenschutzerklärung (Deutsch) und Privacy Policy (English) für die App Cascadia Punktezähler / Cascadia Scorekeeper." />
+  <style>
+    :root{
+      --bg:#f7f7f7; --card:#fff; --accent:#2e7d32; --muted:#666;
+      --maxw:980px;
+    }
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111;}
+    .container{max-width:var(--maxw); margin:28px auto;padding:20px;}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px;}
+    header h1{margin:0;font-size:20px;}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(8,20,40,0.06); margin-bottom:16px;}
+    .langs{display:flex;gap:8px;margin-bottom:12px;}
+    .langs button{padding:8px 12px;border-radius:8px;border:1px solid #ddd;background:#fff; cursor:pointer;}
+    .langs button.active{background:var(--accent);color:white;border-color:transparent;}
+    main{display:grid;grid-template-columns:1fr;gap:12px}
+    h2{margin:0 0 8px 0;font-size:18px;}
+    p{margin:8px 0;color:var(--muted);}
+    ul{margin:8px 0 8px 18px;color:var(--muted);}
+    .meta{font-size:13px;color:#777;margin-top:14px;}
+    footer{margin-top:18px;text-align:center;color:#777;font-size:13px;}
+    .label{font-weight:600;color:#222;margin-top:10px;}
+    pre.note{background:#fafafa;border-left:4px solid #eee;padding:12px;border-radius:6px;color:#333;overflow:auto}
+    @media(min-width:880px){
+      main{grid-template-columns:1fr 1fr;gap:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+
+      <div>
+        <h1>Cascadia Punktezähler — Datenschutzerklärung / Privacy Policy</h1>
+        <div class="meta">Letzte Aktualisierung: 2. November 2025</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Diese Seite enthält die Datenschutzerklärung in Deutsch und Englisch.</strong>
+          <div style="color:#666;margin-top:6px;font-size:13px">Wähle eine Sprache oder scrolle — beide Texte sind verfügbar.</div>
+        </div>
+        <div class="langs" aria-hidden>
+          <button id="btn-de" class="active" onclick="showLang('de')">Deutsch</button>
+          <button id="btn-en" onclick="showLang('en')">English</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- GERMAN -->
+      <section id="lang-de" class="card" aria-labelledby="de-title">
+        <h2 id="de-title">Datenschutzerklärung (Deutsch)</h2>
+
+        <p class="label">1. Verantwortlicher</p>
+        <p>Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist NiHo.<br> E-Mail: <strong>apps.niho@gmail.com</strong>.</p>
+
+        <p class="label">2. Geltungsbereich</p>
+        <p>Diese Datenschutzerklärung gilt für die mobile Anwendung „Cascadia Punktezähler“ (im Folgenden „App“). Die App speichert Spielstände und Spielerprofile lokal auf dem Gerät (keine Registrierung erforderlich).</p>
+
+        <p class="label">3. Welche Daten werden verarbeitet?</p>
+        <ul>
+          <li>Spieler-Profile: Anzeigename, interne ID.</li>
+          <li>Spielstände/Games: Datum, Spielergebnisse, gewählte Wertungskarten, errechnete Punkte, Bonuswerte.</li>
+          <li>Temporäre Dateien, die durch Export/Import entstehen (Dateien, die du selbst erzeugst und teilst).</li>
+          <li>Technische Metadaten (z.B. App-Version), ausschließlich lokal und nur zur Anzeige in der App.</li>
+        </ul>
+
+        <p class="label">4. Zweck der Verarbeitung</p>
+        <ul>
+          <li>Speicherung und Verwaltung von Spielerprofilen und Spielständen auf dem Gerät.</li>
+          <li>Export und Import von Backups (vom Nutzer angestoßen), um Daten zu sichern oder wiederherzustellen.</li>
+          <li>Anzeige der App-Version und Öffnen einer verlinkten Datenschutzerklärung im Browser.</li>
+        </ul>
+
+        <p class="label">5. Rechtsgrundlage</p>
+        <p>Die App verarbeitet Daten auf Basis der Einwilligung/des berechtigten Interesses bzw. zur Erfüllung der vom Nutzer gewünschten Funktionalität (lokale Speicherung, Export/Import). Es werden keine personenbezogenen Daten an einen Server des Anbieters übermittelt.</p>
+
+        <p class="label">6. Weitergabe an Dritte</p>
+        <p>Standardmäßig werden keine Daten an Dritte weitergegeben. Ausnahmen:</p>
+        <ul>
+          <li>Du teilst eine Export-Datei über das System-Share-Sheet — dabei werden die Daten an die gewählte App (z. B. E-Mail, Cloud-Dienst) übergeben. Das ist eine rein nutzerinitiierte Aktion.</li>
+          <li>Beim Öffnen externer Links (z. B. Datenschutzerklärung) wird der Browser gestartet — es findet keine Übermittlung durch die App statt außer der URL-Aufruf.</li>
+        </ul>
+
+        <p class="label">7. Eingesetzte Dritt-Bibliotheken / Funktionen</p>
+        <ul>
+          <li><strong>Hive</strong> – lokale Speicherung (Daten verbleiben auf dem Gerät).</li>
+          <li><strong>share_plus</strong> – zum Teilen von Exportdateien (Nutzer-Initiative; Daten werden an das Plattform-Share-Sheet übergeben).</li>
+          <li><strong>file_picker</strong> – zur Auswahl von Importdateien (Nutzer wählt eine lokale Datei).</li>
+          <li><strong>package_info_plus</strong> – liest App-Version (nur Anzeige).</li>
+          <li><strong>url_launcher</strong> – öffnet externe URLs im Browser (z. B. Datenschutzerklärung).</li>
+        </ul>
+
+        <p class="label">8. Export / Import / Backups</p>
+        <p>Nutzer können alle Daten exportieren (JSON). Die Erzeugung der Datei und das Teilen erfolgen lokal auf deinem Gerät — die App überträgt nichts automatisch in die Cloud. Der Import ersetzt bei Bestätigung die lokalen Daten.</p>
+
+        <p class="label">9. Speicherdauer & Löschung</p>
+        <p>Alle Daten werden lokal gespeichert, solange du die App nutzt. Du kannst einzelne Spieler oder Spielstände innerhalb der App löschen. Möchtest du alle Daten entfernen, deinstalliere die App.</p>
+
+        <p class="label">10. Sicherheit</p>
+        <p>Es werden branchenübliche Maßnahmen zur Datensicherheit empfohlen. Da die Daten lokal gespeichert werden, ist physischer Zugriff auf das Gerät der hauptsächliche Risiko-Vektor. Die App verwendet keine Verschlüsselung für Backups; sichere Exportziele (z. B. verschlüsselte Cloud-Speicher) liegen in deiner Verantwortung.</p>
+
+        <p class="label">11. Rechte der betroffenen Personen</p>
+        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit nach Maßgabe der gesetzlichen Vorschriften. Zur Ausübung dieser Rechte kontaktiere bitte: <strong>apps.niho@gmail.com</strong>.</p>
+
+        <p class="label">12. Änderungen der Datenschutzerklärung</p>
+        <p>Diese Datenschutzerklärung kann aktualisiert werden. Die jeweils aktuelle Version findet sich unter der veröffentlichten URL (sofern vorhanden) oder in der App-Info.</p>
+
+        <p class="label">13. Kontakt</p>
+        <p>Bei Fragen zur Datenverarbeitung: <strong>apps.niho@gmail.com</strong></p>
+      </section>
+
+      <!-- ENGLISH -->
+      <section id="lang-en" class="card" aria-labelledby="en-title" style="display:none">
+        <h2 id="en-title">Privacy Policy (English)</h2>
+
+        <p class="label">1. Data controller</p>
+        <p>The controller for processing personal data in connection with this app is NiHo.<br> E-mail: <strong>apps.niho@gmail.com</strong>.</p>
+
+        <p class="label">2. Scope</p>
+        <p>This Privacy Policy applies to the mobile application "Cascadia Scorekeeper" (the "App"). The app stores player profiles and game states locally on the device (no account required).</p>
+
+        <p class="label">3. What data is processed?</p>
+        <ul>
+          <li>Player profiles: display name and internal ID.</li>
+          <li>Game records: date, scores, selected scoring cards, calculated points, landscape bonuses.</li>
+          <li>Temporary files created by export/import (files you create and share).</li>
+          <li>Technical metadata such as the app version for display purposes only.</li>
+        </ul>
+
+        <p class="label">4. Purpose of processing</p>
+        <ul>
+          <li>Store and manage player profiles and game states on the device.</li>
+          <li>Export and import backups (user triggered) to back up or restore data.</li>
+          <li>Display app version and open the privacy policy URL in a browser.</li>
+        </ul>
+
+        <p class="label">5. Legal basis</p>
+        <p>Data processing is performed to provide the app functionality and based on the user’s actions. No personal data is automatically transmitted to any server of the provider.</p>
+
+        <p class="label">6. Disclosure to third parties</p>
+        <p>By default the app does not share data with third parties. Exceptions:</p>
+        <ul>
+          <li>When you share an exported backup via the system share sheet, the data is passed to the app you choose (e.g. email or cloud). This is initiated by the user.</li>
+          <li>Opening external links (e.g. the privacy policy) launches the browser — the app does not otherwise transfer data.</li>
+        </ul>
+
+        <p class="label">7. Third-party packages / features</p>
+        <ul>
+          <li><strong>Hive</strong> – local storage (data remains on the device).</li>
+          <li><strong>share_plus</strong> – to share export files (user initiated).</li>
+          <li><strong>file_picker</strong> – to select import files (user chooses a file).</li>
+          <li><strong>package_info_plus</strong> – reads app version (display only).</li>
+          <li><strong>url_launcher</strong> – opens external URLs in the browser.</li>
+        </ul>
+
+        <p class="label">8. Export / Import / Backups</p>
+        <p>You can export all app data as JSON. Exporting and sharing is performed locally on your device. Importing allows you to restore data from a backup file; it replaces the current local data after confirmation.</p>
+
+        <p class="label">9. Retention & deletion</p>
+        <p>All data is stored locally as long as you use the app. You can delete players or games through the app. To remove all data, uninstall the app.</p>
+
+        <p class="label">10. Security</p>
+        <p>Data security depends on your device. Backups are not encrypted by default — secure handling of exported files is your responsibility.</p>
+
+        <p class="label">11. Your rights</p>
+        <p>You have the right to access, correct, delete and port your data as provided by law. To exercise your rights contact: <strong>apps.niho@gmail.com</strong>.</p>
+
+        <p class="label">12. Changes to this policy</p>
+        <p>This policy may be updated. The current version will be available at the published URL or in the app info.</p>
+
+        <p class="label">13. Contact</p>
+        <p>Questions about data processing: <strong>apps.niho@gmail.com</strong></p>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('lang-de').style.display = lang === 'de' ? 'block' : 'none';
+      document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+      // keep URL fragment for deep links
+      history.replaceState(null, '', '#' + lang);
+    }
+
+    // initialize from hash or default to de
+    (function() {
+      const h = (location.hash || '#de').replace('#','');
+      showLang(h === 'en' ? 'en' : 'de');
+    })();
+  </script>
+</body>
+</html>
